@@ -38,3 +38,11 @@ export const newPost = async (req,res) => {
         res.status(500).json({ success: false, message: error})
     }
 };
+
+export const deletePost = async (req, res) => {
+    const id  = req.params.id
+    
+    await Post.findByIdAndRemove(id)
+
+    res.json({ message: 'Post deleted successfully' })
+}
