@@ -1,12 +1,12 @@
-import express from 'express';
-import { createImage } from '../controllers/dalle.js';
+import express from "express";
+import { createImage } from "../controllers/dalle.js";
 
 const router = express.Router();
 
-router.route('/').get((req, res) => {
-    res.send('Hello from Dall-e')
+router.route("/").get((req, res) => {
+  res.send("Hello from Dall-ee");
 });
 
-router.post('/', createImage)
+router.post("/", createImage);
 
 export default router;
