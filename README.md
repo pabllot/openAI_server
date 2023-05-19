@@ -2,6 +2,8 @@
 
 Node.js backend code of this fullstack application deployed on vercel https://ai-generator.vercel.app/
 
+frontend code https://github.com/pabllot/openAI_client
+
 <p>An Amazing application where you type a prompt and the Dall-e API generates instantaniously an image created from artificial intelligence, it's that great</p>
 <p>Give it a try, use your imagination and be amazed with the result.</p>
 
