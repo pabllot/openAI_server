@@ -7,7 +7,7 @@ const configuration = new Configuration({
   apiKey: "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",
 });
 
-const openai = new OpenAIApi(configuration);
+var openai = new OpenAIApi(configuration);
 
 export const createImage = async (req, res) => {
   try {
