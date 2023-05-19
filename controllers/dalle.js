@@ -4,10 +4,10 @@ import { Configuration, OpenAIApi } from "openai";
 dotenv.config();
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
-var openai = new OpenAIApi(configuration);
+const openai = new OpenAIApi(configuration);
 
 export const createImage = async (req, res) => {
   try {
